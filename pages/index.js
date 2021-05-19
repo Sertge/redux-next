@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import NavVar from '../components/nav-var.js'
 
 export default function Home() {
   return (
@@ -7,8 +8,9 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className="flex flex-1 flex-col justify-center items-center">
+        <NavVar/>
+        <img src={'/picture.jpeg'} className="max-2-lg max-h-lg w-36"/>
         <h1 className={"bg-blue-100 leading-4 text-6xl h-10 "}>
           Welcome to <a className={"bg-blue-100 text-blue-800"} href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -49,8 +51,8 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={"h-30 border-t-2"}>
-        <a className={"flex items-center m-2"}
+      <footer className={"w-full h-30 border-t-2"}>
+        <a className={"flex items-center m-2 justify-center"}
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
