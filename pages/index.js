@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import NavVar from '../components/nav-var.js'
 
-export default function Home() {
+function Home() {
   return (
     <div className={"flex min-h-screen p-2 flex-col items-center align-middle"}>
       <Head>
@@ -64,3 +64,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
