@@ -16,7 +16,7 @@ const formatTime = (time)=>{
 const Clock = ()=>{
   const {lastUpdate,light}= useClock()
   return (
-    <div className={light?"p-4 inline-block text-green-400 bg-white":"p-4 inline-block text-green-400 bg-black"}>
+    <div className={light?"p-4 inline-block text-white bg-green-400":"p-4 inline-block text-green-400 bg-black"}>
       {formatTime(lastUpdate)}
     </div>
   )

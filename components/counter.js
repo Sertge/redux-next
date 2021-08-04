@@ -23,9 +23,11 @@ const Counter = () => {
     <div>
       <h1>Reducer with states</h1>
       <h2>Count: <span>{count}</span></h2>
-      <button onClick={increment}>Increase</button>
-      <button onClick={decrement}>Decrease</button>
-      <button onClick={reset}>reset</button>
+      <div className='flex space-x-2 align-middle justify-start'>
+        <button onClick={increment} className='border-green-400 border rounded-xl bg-green-500 px-1 text-white'>Increase</button>
+        <button onClick={decrement} className='border-red-400 border rounded-xl bg-red-500 px-1 text-white'>Decrease</button>
+        <button onClick={reset} className='border-blue-400 border rounded-xl bg-blue-500 px-1 text-white'>reset</button>
+      </div>
     </div>
   )
 }
